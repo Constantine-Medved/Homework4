@@ -27,9 +27,14 @@ public class Main {
             System.out.println("На улице " + temperature + " градусов,можно идти без шапки.");
         }
     }
-
     public static void task3() {
         System.out.println("Задача 3.");
+        int speed = 61;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " км/ч, то придётся заплатить штраф.");
+        } else {
+            System.out.println("Если скорость " + speed + " км/ч, можно ездить спокойно.");
+        }
     }
 
     public static void task4() {
