@@ -41,44 +41,44 @@ public class Main {
         int age = 20;
         if (age < 2) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно быть дома с мамой.");
-        }
-        if (age >= 2 && age <= 6) {
+        } else if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в садик.");
-        }
-        if (age >= 7 && age <= 18) {
+        }  else if (age >= 7 && age <= 18) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу.");
-        }
-        if (age > 18 && age < 24) {
+        }  else if (age > 18 && age < 24) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет.");
-        }
-        if (age >= 24) {
+        }  else if (age >= 24) {
             System.out.println("Если возраст человека равен " + age + ", то ему пора ходить на работу.");
         }
     }
-
     public static void task5() {
         System.out.println("Задача 5.");
-        int age = 12;
+        int age = 15;
         boolean withAdult = false;
         if (age < 5) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе.");
-        }
-        if (age >=5 && age <14 && withAdult) {
+        } else if (age >= 5 && age < 14 && withAdult) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
+        } else if (age >= 5 && age < 14 && !withAdult) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе, нет сопровождающего взрослого.");
         } else {
-            if (age >=5 && age <14 && !withAdult) {
-                System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе, нет сопровождающего взрослого.");
-        }
-        if (age >= 14) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
         }
     }
-    }
-
     public static void task6() {
         System.out.println("Задача 6.");
+        int wagonCapacity = 102;
+        int seatsQty = 60;
+        int standQty = wagonCapacity - seatsQty;
+        int passengersInWagon = 59;
+        if (passengersInWagon < 60) {
+            System.out.println("Когда в вагоне " + passengersInWagon + " пассажиров, в вагоне ещё свободно " + (seatsQty - passengersInWagon) + " сидячих мест и " + standQty + " стоячих мест.");
+        } else if (passengersInWagon >= 60 && passengersInWagon < 102) {
+            System.out.println("Когда в вагоне " + passengersInWagon + " пассажиров, в вагоне ещё свободно " + (wagonCapacity - passengersInWagon) + " стоячих мест.");
+        } else {
+            System.out.println("Когда в вагоне " + passengersInWagon + " пассажиров, в вагоне нет свободных мест.");
+        }
     }
-
     public static void task7() {
         System.out.println("Задача 7.");
     }
