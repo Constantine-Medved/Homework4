@@ -81,5 +81,15 @@ public class Main {
     }
     public static void task7() {
         System.out.println("Задача 7.");
+        int one = 10;
+        int two = 33;
+        int three = 15;
+        if (one > two && one > three) {
+            System.out.println("Наибольшее из трёх чисел - число " + one + ".");
+        } else if (two > one && two > three) {
+            System.out.println("Наибольшее из трёх чисел - число " + two + ".");
+        } else {
+            System.out.println("Наибольшее из трёх чисел - число " + three + ".");
+        }
     }
 }
