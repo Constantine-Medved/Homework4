@@ -8,11 +8,10 @@ public class Main {
         task6();
         task7();
     }
-
     public static void task1() {
         System.out.println("Задача 1.");
-        int age = 18;
-        if (age >= 19) {
+        int age = 20;
+        if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " лет, он совершеннолетний.");
         } else {
             System.out.println("Если возраст человека равен " + age + " лет,он не достиг совершеннолетия, нужно немного подождать.");
@@ -22,9 +21,9 @@ public class Main {
         System.out.println("Задача 2.");
         int temperature = 10;
         if (temperature <= 5) {
-            System.out.println("На улице " + temperature + " градусов,нужно надеть шапку.");
+            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку.");
         } else {
-            System.out.println("На улице " + temperature + " градусов,можно идти без шапки.");
+            System.out.println("На улице " + temperature + " градусов, можно идти без шапки.");
         }
     }
     public static void task3() {
